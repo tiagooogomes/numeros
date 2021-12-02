@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'M PLUS 1 Code', sans-serif;
+    color: #CC2825;
+    font-size: 200px;
+    margin: 0;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: #B8B7BD;
+    font-family: 'Lily Script One', cursive;
+}
+
+p{
+    font-size: 100px;
+    margin: 0;
+    color: #B8B7BD;
+}
+
+span{
+    display: block;
+}
+
+
+
+
+
+
+
+#capa{
+    background-color: #241E20;
+    width: 100%;
+    height: 745px;
+
+}
+
+
+
+#principal{
+    background-color: #0E1A26;
+    width: 100%;
+    height: 745px;
+    display: flex;
+    padding-top: 100px;
+    
+}
+
+#secundaria{
+    /* border: 1px solid blue;  */
+    width: 80%;
+}
+
+#testee{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+#formulario{
+    margin-top: 150px;
+}
+
+form input{
+    width: 17%;
+    height: 120px;
+    border: #B8B7BD solid 3px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 80px;
+    color: #B8B7BD;
+    font-family: 'Lily Script One', cursive;
+}
+
+#botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+#botoes input{
+    width: 25%;
+    height: 80px;
+    background-color: #B8B7BD;
+    font-size: 40px;
+    border-radius: 20px;
+    color: #0E1A26;
+    font-family: 'Lily Script One', cursive;
+}
+
+#resultado{
+    /* border: 1px solid red;  */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lily Script One', cursive;
+}
+
