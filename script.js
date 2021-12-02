@@ -14,8 +14,6 @@ function submeterDados(){
     segundo.innerHTML = listaDeValores[1];
     terceiro.innerHTML = listaDeValores[2];
     quarto.innerHTML = listaDeValores[3];
-
-    // console.log(listaDeValores[2]);
 }
 
 function inverterDados(){
@@ -34,22 +32,22 @@ function inverterDados(){
     segundo.innerHTML = listaDeValores[2];
     terceiro.innerHTML = listaDeValores[1];
     quarto.innerHTML = listaDeValores[0];
-
-    // console.log(listaDeValores[2]);
 }
 
 function ordenarDados(){
 
-    let primeiroValor = document.getElementById('primario').value;
-    let segundoValor = document.getElementById('secundario').value;
-    let terceiroValor = document.getElementById('terciario').value;
-    let quartoValor = document.getElementById('quartenario').value;
+    let primeiroValor = parseInt(document.getElementById('primario').value);
+    let segundoValor = parseInt(document.getElementById('secundario').value);
+    let terceiroValor = parseInt(document.getElementById('terciario').value);
+    let quartoValor = parseInt(document.getElementById('quartenario').value);
     let primeiro = document.getElementById('primeiro');
+    let segundo = document.getElementById('segundo');
+    let terceiro = document.getElementById('terceiro');
+    let quarto = document.getElementById('quarto');
 
     const listaDeValores =  new Array ();
 
     listaDeValores.push(primeiroValor, segundoValor, terceiroValor, quartoValor);
-
 
 
     if(primeiroValor < segundoValor && primeiroValor < terceiroValor && primeiroValor < quartoValor){
@@ -151,8 +149,6 @@ function ordenarDados(){
             }            
         }
 
-
-
     }else if(terceiroValor < primeiroValor && terceiroValor < segundoValor && terceiroValor < quartoValor){
 
         primeiro.innerHTML = listaDeValores[2];
@@ -248,25 +244,6 @@ function ordenarDados(){
                 terceiro.innerHTML = listaDeValores[1];
                 quarto.innerHTML = listaDeValores[0];
             }  
-
         }
-
     }
-     
-
-    
-
-
-
-
-
-
-
-
-    // primeiro.innerHTML = listaDeValores[0];
-    // segundo.innerHTML = listaDeValores[1];
-    // terceiro.innerHTML = listaDeValores[2];
-    // quarto.innerHTML = listaDeValores[3];
-
-    // console.log(listaDeValores[2]);
 }

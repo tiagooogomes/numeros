@@ -8,52 +8,33 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?família=M+PLUS+1+Código:wght@700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/icone.svg" type="image/x-icon" />
     </head>
     <body>
         <main>
-            <section id="capa">
-                <h1>NUMBER</h1>
-
+            <section id="secundaria">
+                <h2>Coloque os números, futuque nos botões <span>e veja a mágica acontecer</span></h2>
+                <form id="formulario" >
+                    <div id="testee">
+                        <input type="number"  id="primario"/>
+                        <input type="number"  id="secundario"/>
+                        <input type="number"  id="terciario"/>
+                        <input type="number"  id="quartenario"/>
+                    </div>
+                    <div id="botoes">
+                        <input type="button" value="salvar" onclick="submeterDados()" />
+                        <input type="button" value="inveter" onclick="inverterDados()"/>
+                        <input type="button" value="ordenar" onclick="ordenarDados()"/>
+                    </div>
+                </form>
             </section>
-
-            <section id="principal">
-
-                <section id="secundaria">
-                    <h2>Coloque os números, futuque nos botoes <span>e veja a magica acontecer</span></h2>
-                    <form id="formulario" >
-                        <div id="testee">
-                            <input type="number"  id="primario"/>
-                            <input type="number"  id="secundario"/>
-                            <input type="number"  id="terciario"/>
-                            <input type="number"  id="quartenario"/>
-                        </div>
-
-                        <div id="botoes">
-                            <input type="button" value="salvar" onclick="submeterDados()" />
-                            <input type="button" value="inveter" onclick="inverterDados()"/>
-                            <input type="button" value="ordenar" onclick="ordenarDados()"/>
-                        </div>
-
-                    </form>
-               
-                </section>
-                <div id="resultado">
-                    <p id="primeiro">0</p>
-                    <p id="segundo">0</p>
-                    <p id="terceiro">0</p>
-                    <p id="quarto">0</p>
-                </div>
-
-            </section>
-
-
-
-
-
+            <div id="resultado">
+                <p id="primeiro">0</p>
+                <p id="segundo">0</p>
+                <p id="terceiro">0</p>
+                <p id="quarto">0</p>
+            </div>
         </main>
-        <footer>
-
-        </footer>
-        <script src="script.js"></script>
+         <script src="script.js"></script>
     </body>
 </html>
